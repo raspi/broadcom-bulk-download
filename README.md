@@ -38,8 +38,8 @@ User Guide
 ## Example for LSI 9211-8i
 
 * Go to https://www.broadcom.com/support/download-search?pg=Legacy+Products&pf=Legacy+Host+Bus+Adapters&pn=SAS+9211-8i+Host+Bus+Adapter&pa=&po=&dk=&pl=
-* Look for POST request
-  * Example: https://www.broadcom.com/api/dnd/getdocuments?lastpubdate=2020-07-06-22%3A30%3A29&updateddate=2020-06-25-10%3A34%3A28 (You can't open this directly because it's not **POST**ed from the search page
+* Look for **POST** request
+  * Example: https://www.broadcom.com/api/dnd/getdocuments?lastpubdate=2020-07-06-22%3A30%3A29&updateddate=2020-06-25-10%3A34%3A28 (⚠️ You can't open this directly because it's not **POST**ed from the search page and it's not in correct JSON format)
 * Open the link and save it to your machine as a JSON file
 * Finally bulk download firmware:
   * `python main.py -t Firmware BIOS EFI 'Management Software and Tools' -f your_saved_file.json`
