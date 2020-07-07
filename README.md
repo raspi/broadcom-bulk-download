@@ -35,6 +35,10 @@ Solution Brief
 User Guide
 ```
 
+You can also try to get the desired search JSON result with curl:
+
+    % curl 'https://www.broadcom.com/api/dnd/getdocuments' --compressed --data-raw '{"id":"1211128364570","type":"Page","locale":"avg_en","pg":"Legacy Products","pf":"Legacy Host Bus Adapters","pn":["SAS 9211-8i Host Bus Adapter"],"search-for":"pd"}' -o SEARCH.json
+
 ## Example for LSI 9211-8i
 
 * Go to https://www.broadcom.com/support/download-search?pg=Legacy+Products&pf=Legacy+Host+Bus+Adapters&pn=SAS+9211-8i+Host+Bus+Adapter&pa=&po=&dk=&pl=
